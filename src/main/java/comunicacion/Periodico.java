@@ -24,4 +24,12 @@ public class Periodico extends Escrito {
     public String toString() {
         return null;
     }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public String getPrimicia() {
+        return primicia;
+    }
 }

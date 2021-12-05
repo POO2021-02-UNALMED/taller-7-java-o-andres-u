@@ -11,10 +11,12 @@ public class Libro extends Escrito {
         super(origen, titulo, autor, paginas);
     }
 
+    @Override
     public int palabrasTotales(int input) {
         return 0;
     }
 
+    @Override
     public String interpretacion() {
         return null;
     }
@@ -22,5 +24,17 @@ public class Libro extends Escrito {
     @Override
     public String toString() {
         return null;
+    }
+
+    public String getCo_autor() {
+        return co_autor;
+    }
+
+    public String getEditorial() {
+        return editorial;
+    }
+
+    public String getEdicion() {
+        return edicion;
     }
 }

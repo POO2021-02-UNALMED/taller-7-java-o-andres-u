@@ -23,4 +23,8 @@ public class Fabula extends Escrito {
     public String toString() {
         return null;
     }
+
+    public String getEnsenanza() {
+        return ensenanza;
+    }
 }
