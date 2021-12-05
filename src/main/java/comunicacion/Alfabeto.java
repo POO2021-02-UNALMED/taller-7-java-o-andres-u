@@ -2,13 +2,14 @@ package comunicacion;
 
 public class Alfabeto extends Pictograma {
 
-    private final String[] letras;
+    private static String[] letras;
+
     private final String interpretacion;
 
     public Alfabeto(String origen, String[] letras, String interpretacion) {
         super(origen);
-        this.letras = letras;
         this.interpretacion = interpretacion;
+        Alfabeto.letras = letras;
     }
 
     public int cantidadLetras() {
@@ -23,13 +24,5 @@ public class Alfabeto extends Pictograma {
     @Override
     public String toString() {
         return null;
-    }
-
-    public String[] getLetras() {
-        return letras;
-    }
-
-    public String getInterpretacion() {
-        return interpretacion;
     }
 }
