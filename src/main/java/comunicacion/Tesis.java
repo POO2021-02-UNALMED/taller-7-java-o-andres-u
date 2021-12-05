@@ -2,14 +2,19 @@ package comunicacion;
 
 public class Tesis extends Escrito {
 
-    private String idea;
-    private String[] argumentos;
-    private String conclusion;
-    private String referencias;
-    private String interpretacion;
+    private final String idea;
+    private final String[] argumentos;
+    private final String conclusion;
+    private final String referencias;
+    private final String interpretacion;
 
-    public Tesis(String origen, String titulo, String autor, int paginas) {
+    public Tesis(String origen, String titulo, String autor, int paginas, String idea, String[] argumentos, String conclusion, String referencias, String interpretacion) {
         super(origen, titulo, autor, paginas);
+        this.idea = idea;
+        this.argumentos = argumentos;
+        this.conclusion = conclusion;
+        this.referencias = referencias;
+        this.interpretacion = interpretacion;
     }
 
     @Override
@@ -41,5 +46,9 @@ public class Tesis extends Escrito {
 
     public String getReferencias() {
         return referencias;
+    }
+
+    public String getInterpretacion() {
+        return interpretacion;
     }
 }
