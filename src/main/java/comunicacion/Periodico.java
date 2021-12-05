@@ -25,13 +25,7 @@ public class Periodico extends Escrito {
 
     @Override
     public String toString() {
-        return String.format("""
-                %s
-                %s
-                %s
-                %d
-                %s
-                %s""", super.getOrigen(), super.getTitulo(), super.getAutor(), super.getPaginas(), this.getFecha(), this.getPrimicia());
+        return String.format("%s\n%s\n%s\n%d\n%s\n%s", super.getOrigen(), super.getTitulo(), super.getAutor(), super.getPaginas(), this.getFecha(), this.getPrimicia());
     }
 
     public String getFecha() {
