@@ -20,7 +20,7 @@ public class Periodico extends Escrito {
 
     @Override
     public String interpretacion() {
-        return null;
+        return this.interpretacion;
     }
 
     @Override
@@ -34,9 +34,5 @@ public class Periodico extends Escrito {
 
     public String getPrimicia() {
         return primicia;
-    }
-
-    public String getInterpretacion() {
-        return interpretacion;
     }
 }

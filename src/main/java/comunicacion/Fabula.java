@@ -18,7 +18,7 @@ public class Fabula extends Escrito {
 
     @Override
     public String interpretacion() {
-        return null;
+        return this.interpretacion;
     }
 
     @Override
@@ -28,9 +28,5 @@ public class Fabula extends Escrito {
 
     public String getEnsenanza() {
         return ensenanza;
-    }
-
-    public String getInterpretacion() {
-        return interpretacion;
     }
 }

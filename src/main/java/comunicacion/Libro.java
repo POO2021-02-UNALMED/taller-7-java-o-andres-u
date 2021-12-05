@@ -22,7 +22,7 @@ public class Libro extends Escrito {
 
     @Override
     public String interpretacion() {
-        return null;
+        return this.interpretacion;
     }
 
     @Override
@@ -40,9 +40,5 @@ public class Libro extends Escrito {
 
     public String getEdicion() {
         return edicion;
-    }
-
-    public String getInterpretacion() {
-        return interpretacion;
     }
 }
