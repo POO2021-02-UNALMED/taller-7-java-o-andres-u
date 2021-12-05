@@ -1,5 +1,8 @@
 package comunicacion;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class Alfabeto extends Pictograma {
 
     private static String[] letras;
@@ -23,6 +26,7 @@ public class Alfabeto extends Pictograma {
 
     @Override
     public String toString() {
-        return null;
+        List<String> letras = Arrays.asList(Alfabeto.letras);
+        return letras.toString().replace("[", "").replace("]", "");
     }
 }

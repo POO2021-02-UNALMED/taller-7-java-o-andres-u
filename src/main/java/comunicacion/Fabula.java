@@ -23,7 +23,12 @@ public class Fabula extends Escrito {
 
     @Override
     public String toString() {
-        return null;
+        return String.format("""
+                %s
+                %s
+                %s
+                %d
+                %s""", super.getOrigen(), super.getTitulo(), super.getAutor(), super.getPaginas(), this.getEnsenanza());
     }
 
     public String getEnsenanza() {
